@@ -1,4 +1,4 @@
-This is a starter project for a Node.js API. Out of the box you get authentication, service and data-access layers, unit and integrations tests, users accounts, and emails using Postmark.
+This is a starter project for a Node.js API. Out of the box you get authentication, service and data-access layers, unit and integrations tests, user accounts, and emails using Postmark.
 
 This project is built on:
 
@@ -60,6 +60,8 @@ body : {
   accessToken : 'xxx' //access token you've received from the Oauth2 identity provider
 }
 ```
+
+> NOTE : login in the first time will send the user an email using Postmark
 
 This will return an object:
 
