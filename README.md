@@ -2,11 +2,11 @@ This is a starter project for a Node.js API. Out of the box you get authenticati
 
 This project is built on:
 
-Express
-MongoDB
-Mongoose
-JWT
-Oauth2
+* Express
+* MongoDB
+* Mongoose
+* JWT
+* Oauth2
 and lots more
 
 ## Getting Started
