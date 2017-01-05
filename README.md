@@ -75,7 +75,7 @@ This will return an object:
 GET /users/me
 ```
 
-> NOTE : when making authenticated requests your client will need to pass the header:
+> NOTE : when making authenticated requests your client will need to pass the header:<br>
 > ``` x-access-token : 'xxxx' //your JWT token ```
 
 This will return the current user:
