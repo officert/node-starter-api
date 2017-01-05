@@ -89,3 +89,28 @@ This will return the current user:
   profilePicture: 'https://google.com/johndoe.jpg'
 }
 ```
+
+2) Update a user by id
+
+```
+PUT /users/:id
+
+body {
+  firstName : 'Larry'
+}
+```
+
+> NOTE : when making authenticated requests your client will need to pass the header:<br>
+> ``` x-access-token : 'xxxx' //your JWT token ```
+
+This will return the updated user:
+
+```
+{
+  id : '12345',
+  firstName: 'Larry',
+  lastName: 'Doe',
+  email: 'jdoe@gmail.com',
+  profilePicture: 'https://google.com/johndoe.jpg'
+}
+```
