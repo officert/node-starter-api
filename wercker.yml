@@ -1,0 +1,41 @@
+box: node:6.9.0
+
+services:
+  - id: mongo:3.2.10
+
+build:
+  steps:
+    - npm-install
+
+    - script:
+        name: postinstall
+        code: |
+          make post-install
+
+    - script:
+        name: echo nodejs info
+        code: |
+          echo "node version $(node -v) running"
+          echo "npm version $(npm -v) running"
+
+    - script:
+        name: echo env info
+        code: |
+          set
+
+    - script:
+        name: test-int
+        code: |
+          make test-int;
+
+    - script:
+        name: test-unit
+        code: |
+          make test-unit;
+
+deploy:
+  steps:
+    - heroku-deploy:
+        key-name: HEROKU_DEPLOY_KEY
+        user: $HEROKU_USER
+        app-name: $HEROKU_APP_NAME
