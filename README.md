@@ -1,11 +1,12 @@
+## Node.js Starter API
+
 This is a starter project for a Node.js API. Out of the box you get authentication, service and data-access layers, unit and integrations tests, user accounts, and emails using Postmark.
 
 This project is built on:
 
-- Express
-- MongoDB
-- Mongoose
-- JWT
+- [Express](https://github.com/expressjs/express)
+- [Mongoose + MongoDB](https://github.com/Automattic/mongoose)
+- [Json Web Token](https://github.com/auth0/node-jsonwebtoken)
 - Oauth2 and lots more
 
 # Getting Started
@@ -78,7 +79,7 @@ GET /users/me
 ```
 
 > NOTE : when making authenticated requests your client will need to pass the header:<br>
-> ``` x-access-token : 'xxxx' //your JWT token ```
+> `x-access-token : 'xxxx' //your JWT token`
 
 This will return the current user:
 
@@ -103,7 +104,7 @@ body {
 ```
 
 > NOTE : when making authenticated requests your client will need to pass the header:<br>
-> ``` x-access-token : 'xxxx' //your JWT token ```
+> `x-access-token : 'xxxx' //your JWT token`
 
 This will return the updated user:
 
